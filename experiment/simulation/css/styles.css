@@ -943,22 +943,98 @@ sub {
   margin-bottom: 15px;
 }
 
-/* CONCLUSION POPUP */
+/* =============================== */
+/*     CONCLUSION POPUP (FINAL)    */
+/* =============================== */
+
 .conclusion-modal .conclusion-box {
-  background: #ffffff;
-  color: #222;
-  border: 2px solid #d9d9d9;
+  background: #1f1f1f;            /* Dark gray like screenshot */
+  color: #f5f5f5;                 /* Soft white text */
+  width: 520px;
+  max-width: 90%;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #3a3a3a;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
   max-height: 80vh;
   overflow-y: auto;
+  animation: fadeIn 0.25s ease;
 }
 
-.conclusion-content p {
-  background: #f7f9fc;
-  border-left: 5px solid #4a90e2;
-  padding: 10px 14px;
-  margin-bottom: 12px;
-  border-radius: 6px;
+/* Title */
+.conclusion-box h3 {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Bullet list styling like screenshot */
+.conclusion-list {
+  list-style: disc;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;                      /* Spacing between bullets */
+}
+
+.conclusion-list li {
   line-height: 1.6;
+  font-size: 15.5px;
+  color: #e5e7eb;                 /* Light gray text */
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================== */
+/*    PERFECT FULL-WIDTH TABLE     */
+/* =============================== */
+
+.result-table {
+  width: 100%;                 /* Table uses full popup width */
+  table-layout: auto;          /* Auto adjust column width */
+  border-collapse: collapse;
+  background: #899dcc;
+}
+
+/* HEADERS & CELLS */
+.result-table th,
+.result-table td {
+  white-space: nowrap;         /* Keep on one line */
+  padding: 10px 14px;
+  border: 1px solid #4d5566;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Allow table to GROW instead of hiding text */
+.result-modal .result-box {
+  width: auto;
+  max-width: 95vw;             /* Fit screen on small devices */
+  height: auto;
+  max-height: 85vh;            /* Scroll only if VERY tall */
+  overflow-y: auto;
+  padding: 20px 25px;
+  display: block;
 }
 
 
@@ -977,21 +1053,18 @@ sub {
 
 
 
+.svg-stage {
+  width: 450px;
+  height: 350px;
+  margin: 20px auto;
+  position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#indentSVG {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s linear;
+}
 
 
 
