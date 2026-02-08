@@ -48,20 +48,31 @@ This curve is the core dataset for contact mechanics evaluation.
 
 ## **Step 6: Determine Stiffness & Reduced Modulus**
 - Obtain contact stiffness:  
-  \[
-  S = \frac{dP}{dh}
-  \]
-- Use S and contact equations to calculate \(E^*\)
+  
+  S = dP\dh
+
+- Use S and contact equations to calculate E*
 
 ---
 
 ## **Step 7: Compute Contact Radius, Area & Pressures**
 Use Hertz equations to find:
 
-- Contact radius: \(a\)  
-- Contact area: \(A = \pi a^2\)  
-- Mean pressure: \(p_m = P/A\)  
-- Maximum pressure: \(p_0\)
+<ul class="formula-list">
+  <li>Contact radius: a</li>
+
+  <li>Contact area:  
+      A = π a<sup>2</sup>
+  </li>
+
+  <li>Mean pressure:  
+      p<sub>m</sub> = P / A
+  </li>
+
+  <li>Maximum pressure:  
+      p<sub>0</sub>
+  </li>
+</ul>
 
 These predict likelihood of yielding or damage.
 
